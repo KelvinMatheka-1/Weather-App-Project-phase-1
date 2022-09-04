@@ -29,6 +29,9 @@ const weather = {
   document.querySelector(".temp").innerText = temp + "°C";
   document.querySelector(".humidity").innerText = "Humidity: " + humidity +"%";
   
+  },
+  search: function () {
+    this.result(document.querySelector(".input").value);
   }}
 
   document.querySelector(".input").addEventListener("keypress", function (event) {
