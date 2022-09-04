@@ -44,4 +44,7 @@ document.querySelector(".input").addEventListener("keyup", function (event) {
       weather.search();
     }
 });
- 
+function like(){
+  document.getElementById("li").style.color = "#0080ff";
+  document.getElementById("di").style.color = "white";
+}
