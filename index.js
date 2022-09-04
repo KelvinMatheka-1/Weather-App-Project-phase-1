@@ -5,6 +5,19 @@ const weather = {
       .then((response) => {
          return response.json();
       })
-      //.then((data) => this.renderWeather(data));
-      .then(data => console.log(data));
+      //.then(data => console.log(data));
+      then((data) => this.renderWeather(data));
+      
+  },
+
+  renderWeather: function (data) {
+
+    const {country} = data.sys;
+    const {name} = data;
+    const {description, icon} = data.weather[0]
+    const {temp} = data.main
+    const {humidity} = data.main
+    const {speed} = data.wind
+    console.log(name,temp, icon, description, speed, humidity);
   }}
+
