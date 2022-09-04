@@ -48,3 +48,7 @@ function like(){
   document.getElementById("li").style.color = "#0080ff";
   document.getElementById("di").style.color = "white";
 }
+function dislike(){
+  document.getElementById("di").style.color = "#0080ff";
+  document.getElementById("li").style.color = "white";
+}
