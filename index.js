@@ -32,10 +32,14 @@ const weather = {
   },
   search: function () {
     this.result(document.querySelector(".input").value);
-  }}
+  }
+}
 
   document.querySelector(".input").addEventListener("keypress", function (event) {
     if (event.keyCode === 13) {
       weather.search();
     }
+  })
+  document.querySelector(".btn").addEventListener("click", function () {
+    weather.search();
   });
