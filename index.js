@@ -1,4 +1,4 @@
-const weather = {
+let weather = {
   result: function (city) {
     fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=0c5ba44157f7dff3cb2d36f27b5463b6"
     )
@@ -6,7 +6,7 @@ const weather = {
          return response.json();
       })
       //.then(data => console.log(data));
-      then((data) => this.renderWeather(data));
+      .then((data) => this.renderWeather(data));
       
   },
 
@@ -29,17 +29,19 @@ const weather = {
   document.querySelector(".temp").innerText = temp + "°C";
   document.querySelector(".humidity").innerText = "Humidity: " + humidity +"%";
   
+  document.querySelector(".weatherinfo").classList.remove("reload");
   },
   search: function () {
     this.result(document.querySelector(".input").value);
-  }
-}
+  },
+};
 
-  document.querySelector(".input").addEventListener("keypress", function (event) {
+document.querySelector(".btn").addEventListener("click", function () {
+  weather.search();
+});
+document.querySelector(".input").addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
       weather.search();
     }
-  })
-  document.querySelector(".btn").addEventListener("click", function () {
-    weather.search();
-  });
+});
+ 
