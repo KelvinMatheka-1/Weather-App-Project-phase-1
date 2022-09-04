@@ -117,6 +117,7 @@ button:hover {
   font-weight: 900;
   margin: 0px 0px;
   padding-left: 20px;
+ 
 }
 .weatherinfo.reload{
   visibility: hidden;
@@ -162,10 +163,21 @@ button:hover {
 
 .review{
 
-  color: rgb(217, 237, 255);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 900;
   margin: 0px 0px;
   padding-left: 20px;
   margin-left: 255px;
+}
+.container footer{
+  background-size: cover;
+  background-position: top center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 35px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
 }

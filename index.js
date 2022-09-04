@@ -1,3 +1,5 @@
+  //fetching weather info
+
 let weather = {
   result: function (city) {
     fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=0c5ba44157f7dff3cb2d36f27b5463b6"
@@ -29,7 +31,7 @@ let weather = {
   document.querySelector(".temp").innerText = temp + "°C";
   document.querySelector(".humidity").innerText = "Humidity: " + humidity +"%";
   
-  document.querySelector(".weatherinfo").classList.remove("reload");
+  document.querySelector(".weatherinfo", "#footer").classList.remove("reload");
   },
   search: function () {
     this.result(document.querySelector(".input").value);
