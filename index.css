@@ -159,3 +159,13 @@ button:hover {
   color: rgb(250, 112, 32);
   cursor: pointer;
 }
+
+.review{
+
+  color: rgb(217, 237, 255);
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0px 0px;
+  padding-left: 20px;
+  margin-left: 255px;
+}

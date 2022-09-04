@@ -35,7 +35,7 @@ let weather = {
     this.result(document.querySelector(".input").value);
   },
 };
-
+  //adding event listeners to buttons
 document.querySelector(".btn").addEventListener("click", function () {
   weather.search();
 });
