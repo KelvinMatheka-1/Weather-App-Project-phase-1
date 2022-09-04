@@ -19,5 +19,20 @@ const weather = {
     const {humidity} = data.main
     const {speed} = data.wind
     console.log(name,temp, icon, description, speed, humidity);
+  
+  //rendering weather info into the webpage
+    
+  document.querySelector(".cityWeather").innerText ="Hello stranger 👋. "  + name + ", "+country+  " Weather Today is";
+  document.querySelector(".icon").src = "http://openweathermap.org/img/wn/"+ icon +"@2x.png";
+  document.querySelector(".description").innerText = description;
+  document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
+  document.querySelector(".temp").innerText = temp + "°C";
+  document.querySelector(".humidity").innerText = "Humidity: " + humidity +"%";
+  
   }}
 
+  document.querySelector(".input").addEventListener("keypress", function (event) {
+    if (event.keyCode === 13) {
+      weather.search();
+    }
+  });
