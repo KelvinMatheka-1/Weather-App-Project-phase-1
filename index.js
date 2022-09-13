@@ -41,17 +41,13 @@ let weather = {
 document.querySelector(".btn").addEventListener("click", function () {
   weather.search();
 });
-document.querySelector(".input").addEventListener("keyup", function (event) {
+document.querySelector(".input").addEventListener("keypress", function (event) {
     if (event.keyCode === 13) {
       weather.search();
     }
 });
-function like(){
-  document.getElementById("li").style.color = "#0080ff";
-  document.getElementById("di").style.color = "white";
-}
-function dislike(){
-  document.getElementById("di").style.color = "#0080ff";
-  document.getElementById("li").style.color = "white";
-}
+document.querySelector('#btn').addEventListener('click', function() {
+  let userMessage = prompt("How was your experience?");
+  alert ("Thank you for the review!😉");
+})
 

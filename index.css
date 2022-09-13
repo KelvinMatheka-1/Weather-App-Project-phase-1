@@ -138,28 +138,7 @@ button:hover {
 #changebtn:hover {
   background: #7c7c7c6b;
 }
-.liker{
-  display: flex;
-  margin-left: 280px;
-  margin-top: 20px;
-}
-.like{
-  margin: 30px;
-}
-.like i{
-  font-size: 36px;
-  color: rgb(250, 112, 32);
-  cursor: pointer;
-}
-.dislike{
-  margin: 30px;
-}
 
-.dislike i{
-  font-size: 36px;
-  color: rgb(250, 112, 32);
-  cursor: pointer;
-}
 
 .review{
 
@@ -181,4 +160,16 @@ button:hover {
   border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   
+}
+#btn{
+  width: 30%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(250, 112, 32);
+  color: #fff;
+  transition: 0.2s;
+  margin-left: 280px;
+  margin-top: 20px;
 }
