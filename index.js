@@ -55,7 +55,3 @@ function dislike(){
   document.getElementById("li").style.color = "white";
 }
 
-
-
-
-
